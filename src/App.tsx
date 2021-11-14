@@ -90,12 +90,12 @@ function Main() {
       <section className="hero is-small is-dark">
         <div className="hero-body">
           <div className="container">
-            <img src={leafLogo} className="logo" alt="Animal Crossing New Horizons Inventory Generator Logo" />
+            
             <h1 className="title">
-              AC:NH Inventory Generator
+              <img src={leafLogo} className="logo" alt="Animal Crossing New Horizons Leaf" /> AC:NH OrderBot Helper
       </h1>
             <h2 className="subtitle">
-              V1.7.0
+              <a href="https://github.com/yknx4/yknx4.github.io" target="_blank" rel="noreferrer">Credits to yknx4</a> | Modified V1.0 by JayJay
       </h2>
           </div>
         </div>
@@ -130,14 +130,13 @@ function Main() {
 
       <section className="section">
         <pre>
-          {`[CHEAT CODE]\n`}
+          {`%ordercat `}
           {map(selectedItems, (k, v) => formatCheat(k, v))}
         </pre>
       </section>
 
-
       <footer className="footer">
-        <div className="content has-text-centered"><p>No rights reserved. Do whatever the f*** do you want. Ale Ornelas 2020    </p>
+        <div className="content has-text-centered"><p>Original code by Ale Ornelas 2020 - Modified by JayJay 2021</p>
         </div>
       </footer>
 

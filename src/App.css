@@ -1,8 +1,9 @@
 .logo {
   image-rendering: optimizeSpeed;
-  width: 48px;
-  height: 48px;
-  padding: 4px;
+  width: 36px;
+  height: 36px;
+  
+  vertical-align: bottom;
 }
 
 .acitem {
@@ -16,7 +17,8 @@
 
 code,
 pre {
-  background: #eee;
+  background: #ccc;
+  white-space: normal;
 }
 
 code {
@@ -26,4 +28,13 @@ code {
 
 pre {
   padding: 1em;
+}
+
+.section {
+  background: grey;
+}
+
+.footer {
+  background: grey;
+  color: white;
 }

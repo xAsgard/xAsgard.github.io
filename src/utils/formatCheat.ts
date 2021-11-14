@@ -19,21 +19,21 @@ export function getInventoryAddres(player: number, slot: number) {
 
 type Player = keyof typeof ot
 
-const inventoryOffsets: Record<Player, number> = {
-  "Player 1": 0,
-  "Player 2": 1,
-  "Player 3": 2,
-  "Player 4": 3,
-  "Player 5": 4,
-  "Player 6": 5,
-  "Player 7": 6,
-  "Player 8": 7
-}
+//const inventoryOffsets: Record<Player, number> = {
+//  "Player 1": 0,
+//  "Player 2": 1,
+//  "Player 3": 2,
+//  "Player 4": 3,
+//  "Player 5": 4,
+//  "Player 6": 5,
+//  "Player 7": 6,
+//  "Player 8": 7
+//}
 
-function generateTemplate(index: number, player: Player = "Player 1"): [string, string, string, string] {
-  const inventoryPosition = getInventoryAddres(inventoryOffsets[player], index)
-  return ["08100000", inventoryPosition, "00000000", "0000FFFE"]
-}
+//function generateTemplate(index: number, player: Player = "Player 1"): [string, string, string, string] {
+//  const inventoryPosition = getInventoryAddres(inventoryOffsets[player], index)
+//  return ["08100000", inventoryPosition, "00000000", "0000FFFE"]
+//}
 
 
 function recipeCheat(item: Recipes): string[] {
@@ -45,8 +45,8 @@ function itemCheat(item: Variant): string[] {
 }
 
 export function formatCheat(item: Variant | Recipes, indexAsString: string, player: Player = "Player 1") {
-  const index = parseInt(indexAsString, 10);
-  const template = generateTemplate(index, player)
+  //const index = parseInt(indexAsString, 10);
+  //const template = generateTemplate(index, player)
   const [thirdField, fourthField] = isRecipe(item) ? recipeCheat(item) : itemCheat(item)
-  return `${template[0]} ${template[1]} ${thirdField} ${fourthField}\n`;
+  return `${thirdField}${fourthField} `;
 }
