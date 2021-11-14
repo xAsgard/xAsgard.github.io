@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/acbh/static/css/main.dfa11988.chunk.css",
+    "main.js": "/acbh/static/js/main.73807405.chunk.js",
+    "main.js.map": "/acbh/static/js/main.73807405.chunk.js.map",
+    "runtime-main.js": "/acbh/static/js/runtime-main.bd4b5f30.js",
+    "runtime-main.js.map": "/acbh/static/js/runtime-main.bd4b5f30.js.map",
+    "static/css/2.176aaa03.chunk.css": "/acbh/static/css/2.176aaa03.chunk.css",
+    "static/js/2.063c3726.chunk.js": "/acbh/static/js/2.063c3726.chunk.js",
+    "static/js/2.063c3726.chunk.js.map": "/acbh/static/js/2.063c3726.chunk.js.map",
+    "index.html": "/acbh/index.html",
+    "static/css/2.176aaa03.chunk.css.map": "/acbh/static/css/2.176aaa03.chunk.css.map",
+    "static/css/main.dfa11988.chunk.css.map": "/acbh/static/css/main.dfa11988.chunk.css.map",
+    "static/js/2.063c3726.chunk.js.LICENSE.txt": "/acbh/static/js/2.063c3726.chunk.js.LICENSE.txt",
+    "static/media/leaf-logo.a8cf6480.png": "/acbh/static/media/leaf-logo.a8cf6480.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd4b5f30.js",
+    "static/css/2.176aaa03.chunk.css",
+    "static/js/2.063c3726.chunk.js",
+    "static/css/main.dfa11988.chunk.css",
+    "static/js/main.73807405.chunk.js"
+  ]
+}
