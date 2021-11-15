@@ -75,7 +75,7 @@ function Main() {
   const fillIndex = (index: number, item = selectedItem) => selectItemInCell({ ...selectedItems, [index]: item })
   const fillCell = (row: number, column: number, item = selectedItem) => fillIndex(cellIndex(row, column), item)
   const fillEmpty = (item = selectedItem) => {
-    message.success(`Added ${item.name} to the list.`)
+    message.success(`Added ${item.name} to list [${nextEmptyIndex+1}/40]`)
     fillIndex(nextEmptyIndex, item)
   }
   const selectNext = () => {
@@ -90,12 +90,12 @@ function Main() {
       <section className="hero is-small is-dark">
         <div className="hero-body">
           <div className="container">
-            
+          <img src={leafLogo} className="logo" alt="Animal Crossing New Horizons Leaf" />
             <h1 className="title">
-              <img src={leafLogo} className="logo" alt="Animal Crossing New Horizons Leaf" /> AC:NH OrderBot Helper
+            AC:NH OrderBot Helper
       </h1>
             <h2 className="subtitle">
-              <a href="https://github.com/yknx4/yknx4.github.io" target="_blank" rel="noreferrer">Credits to yknx4</a> | Modified V1.0 by JayJay
+              <a href="https://github.com/yknx4/yknx4.github.io" target="_blank" rel="noreferrer">Credits to yknx4</a> | V1.0 modified by JayJay
       </h2>
           </div>
         </div>
@@ -107,14 +107,10 @@ function Main() {
             <div className='container is-fluid'>
               <div className="columns">
                 <div className="column">
-                  <Button onClick={() => selectNext()}>
-                    Select Next
-            </Button>
+                  <Button onClick={() => selectNext()}>Select Next</Button>
                 </div>
                 <div className="column">
-                  <Button disabled={Object.values(selectedItems).length >= 40} onClick={() => fillEmpty()}>
-                    Fill Next Empty
-            </Button>
+                  <Button disabled={Object.values(selectedItems).length >= 40} onClick={() => fillEmpty()}>Fill Next Empty</Button>
                 </div>
               </div>
               <ItemShow variant={selectedItem} />
@@ -136,7 +132,8 @@ function Main() {
       </section>
 
       <footer className="footer">
-        <div className="content has-text-centered"><p>Original code by Ale Ornelas 2020 - Modified by JayJay 2021</p>
+        <div className="content has-text-centered"><p>Original code by Ale Ornelas 2020</p>
+        <p>Modified by JayJay 2021</p>
         </div>
       </footer>
 

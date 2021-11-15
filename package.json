@@ -1,6 +1,6 @@
 {
-  "name": "acig",
-  "homepage": "https://yknx4.github.io/acig/",
+  "name": "acbh",
+  "homepage": "https://xasgard.github.io/",
   "version": "1.0.0",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
@@ -63,7 +63,7 @@
   "devDependencies": {
     "ahooks": "^2.8.0",
     "gh-pages": "^3.1.0",
-    "react-copy-to-clipboard": "^5.0.2",
+    "react-copy-to-clipboard": "^5.0.4",
     "typewiz-core": "^1.2.4"
   }
 }
